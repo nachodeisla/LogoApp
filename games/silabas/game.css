@@ -1,0 +1,22 @@
+.syl-progress { color: #627d98; margin-top: 8px; }
+.syl-image { font-size: 9rem; line-height: 1.1; margin: 8px 0; }
+.syl-slots { display: flex; justify-content: center; gap: 10px; margin: 12px 0; flex-wrap: wrap; }
+.syl-slot {
+  min-width: 80px; height: 64px; padding: 0 12px;
+  border: 3px dashed #9fb3c8; border-radius: 14px; background: #fff;
+  font-size: 2rem; font-weight: 700; display: flex; align-items: center; justify-content: center;
+}
+.syl-slot.ok { border: 3px solid #2f9e44; background: #d3f9d8; color: #1b6b2b; }
+.syl-msg { min-height: 1.6em; font-size: 1.3rem; font-weight: 600; margin: 8px 0; }
+.syl-msg.bad { color: #d62828; }
+.syl-msg.good { color: #2f9e44; }
+.syl-pieces { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 12px; }
+.syl-piece {
+  min-width: 90px; padding: 14px 20px; border: 0; border-radius: 16px;
+  background: #2e86ab; color: #fff; font: inherit; font-size: 1.8rem; font-weight: 700;
+  cursor: pointer; box-shadow: 0 5px 0 rgba(0, 0, 0, .2);
+}
+.syl-piece:hover:not(:disabled) { transform: translateY(-2px); }
+.syl-piece.used { opacity: .35; box-shadow: none; }
+.syl-piece.wrong { background: #d62828; opacity: 1; animation: shake .35s; }
+@keyframes shake { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }

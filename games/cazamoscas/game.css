@@ -1,0 +1,32 @@
+.fly-word { font-size: 3rem; font-weight: 800; margin: 8px 0; }
+.fly-word .first { color: #d62828; }
+.fly-word-img { font-size: 3rem; }
+.fly-hint { font-size: 1.2rem; margin: 0 0 8px; }
+.fly-arena {
+  position: relative; height: 420px; overflow: hidden;
+  background: linear-gradient(#cfe8ff, #e8f7e0); border-radius: 24px;
+  border: 3px solid #9fb3c8; touch-action: manipulation;
+}
+.fly {
+  position: absolute; left: 0; top: 0; width: 84px; height: 84px; border: 0; padding: 0;
+  background: none; cursor: pointer; font-size: 4.2rem; line-height: 84px; text-align: center;
+  will-change: transform;
+}
+.fly span {
+  position: absolute; left: 50%; top: 56%; transform: translate(-50%, -50%);
+  font: 800 1.6rem "Segoe UI", sans-serif; color: #fff; background: #243b53;
+  border-radius: 50%; width: 38px; height: 38px; line-height: 38px;
+}
+.fly.wrong {
+  filter: sepia(1) saturate(8) hue-rotate(-35deg) drop-shadow(0 0 8px #d62828);
+  background: rgba(214, 40, 40, .35); border-radius: 50%;
+}
+.fly.wrong span { background: #d62828; }
+.fly.hit { opacity: 0; transition: opacity .2s; pointer-events: none; }
+.fly-msg { min-height: 1.6em; font-size: 1.3rem; font-weight: 600; margin: 8px 0; }
+.fly-msg.bad { color: #d62828; }
+.fly-msg.good { color: #2f9e44; }
+.fly-again {
+  padding: 14px 24px; border: 0; border-radius: 16px; background: #2e86ab; color: #fff;
+  font: 700 1.5rem "Segoe UI", sans-serif; cursor: pointer;
+}
